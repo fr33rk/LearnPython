@@ -20,7 +20,7 @@ print(x[:3])
 print(x[3:])
 
 # Copy
-print('Copy')
+print('---| Copy |---')
 y = x[:]
 y[0] = "black berry"
 print(x)
@@ -41,6 +41,7 @@ print(x)
 x.append("coconut")
 print(x)
 x.extend(["peach", "pear"])
+x = x + ["fig", "pomegranate"]
 
 #deleting
 y = x[:]
@@ -53,7 +54,7 @@ x.reverse()
 print(x)
 
 #exercise append
-print("exercise append")
+print("---| exercise append |---")
 print(f"before: {x}")
 x[:0] = x[-3:]
 x[-3:] = []
@@ -85,7 +86,51 @@ y = sorted(x)
 print(y)
 
 #exercise sort
-print("exercise sort")
-x = [[1, 2, 3], [2, 1, 3], [4, 0, 1]]
-x.sort(key=lambda item: item[1])
+print("---| exercise sort |---")
+z = [[1, 2, 3], [2, 1, 3], [4, 0, 1]]
+z.sort(key=lambda item: item[1])
+print(z)
+
+# searching
+print("---| searching |---")
+print("apple" in x)
+print("tomato" not in x)
+
+#index
+print("---| index |---")
+print(x.index("banana"))
+
+# filling
+print("---| filling |---")
+y = ["apple"] * 5
+print(y)
+
+# Min and Max
+print("---| Min and Max |---")
+print(min(x))
+print(max(x))
+
+# Count
+print("---| Count |---")
+print(x.count("apple"))
+
+#exercise
+print("---| exercise |---")
+print(len([[1,2]] * 3))
+
+x = [1, 2, 3, 3, 4, 4, 4, 5]
+if 4 in x:
+    x.remove(4)
 print(x)
+
+for i in x:
+    if x.count(i) > 1:
+        x.remove(i)
+
+print(x)
+
+#tuples
+print('---| tuples |---')
+x = (1, 2, 3, 4)
+x = x[::-1]
+print(list(x))
