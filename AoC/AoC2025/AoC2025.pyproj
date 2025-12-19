@@ -22,13 +22,24 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="AoC2025.py" />
-    <Compile Include="Puzzle6.py" />
+    <Compile Include="Puzzles\Puzzle1.py" />
+    <Compile Include="Puzzles\Puzzle2.py" />
+    <Compile Include="Puzzles\Puzzle3.py" />
+    <Compile Include="Puzzles\Puzzle4.py" />
+    <Compile Include="Puzzles\Puzzle5.py" />
+    <Compile Include="Puzzles\Puzzle6.py" />
     <Compile Include="PuzzleBase.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Inputs\" />
+    <Folder Include="Puzzles\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Inputs\Puzzle1.input" />
+    <Content Include="Inputs\Puzzle2.input" />
+    <Content Include="Inputs\Puzzle3.input" />
+    <Content Include="Inputs\Puzzle4.input" />
+    <Content Include="Inputs\Puzzle5.input" />
     <Content Include="Inputs\Puzzle6.input" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

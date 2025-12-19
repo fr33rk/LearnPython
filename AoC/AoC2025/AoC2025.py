@@ -1,9 +1,14 @@
 from puzzleBase import RunMode as RU
-from Puzzle6 import Puzzle6
+from Puzzles.Puzzle5 import Puzzle5
+import time
 
-currentPuzzle = Puzzle6()
+currentPuzzle = Puzzle5()
 
-currentPuzzle.RunMode = RU.TEST
+currentPuzzle.RunMode = RU.REAL
 
-print("Part 1:", currentPuzzle.solve_part1())
-print("Part 2:", currentPuzzle.solve_part2())
+print("Running Puzzle:", currentPuzzle.__class__.__name__)
+start = time.perf_counter()
+print(f"Part 1: {currentPuzzle.solve_part1()} in {(time.perf_counter() - start) * 1000:.3f}ms")
+
+start = time.perf_counter()
+print(f"Part 2: {currentPuzzle.solve_part2()} in {(time.perf_counter() - start) * 1000:.3f}ms")
