@@ -29,6 +29,7 @@
     <Compile Include="Puzzles\Puzzle5.py" />
     <Compile Include="Puzzles\Puzzle6.py" />
     <Compile Include="PuzzleBase.py" />
+    <Compile Include="Puzzles\Puzzle7.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Inputs\" />
@@ -41,6 +42,7 @@
     <Content Include="Inputs\Puzzle4.input" />
     <Content Include="Inputs\Puzzle5.input" />
     <Content Include="Inputs\Puzzle6.input" />
+    <Content Include="Inputs\Puzzle7.input" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

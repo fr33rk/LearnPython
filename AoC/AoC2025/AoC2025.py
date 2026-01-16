@@ -1,8 +1,8 @@
 from puzzleBase import RunMode as RU
-from Puzzles.Puzzle5 import Puzzle5
+from Puzzles.Puzzle7 import Puzzle7
 import time
 
-currentPuzzle = Puzzle5()
+currentPuzzle = Puzzle7()
 
 currentPuzzle.RunMode = RU.REAL
 
